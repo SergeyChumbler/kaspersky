@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaspersky.Web", "Kaspersky.Web\Kaspersky.Web.csproj", "{169F45DF-46F1-435D-BFEB-71C9EFF29D68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaspersky.BL", "Kaspersky.BL\Kaspersky.BL.csproj", "{B2B4E479-1932-4FDC-B417-F8230F7E380A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaspersky.Data", "Kaspersky.Data\Kaspersky.Data.csproj", "{7FA4D5E3-935F-4FBC-82D3-5FE001FB6F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaspersky.Tests", "Kaspersky.Tests\Kaspersky.Tests.csproj", "{5B169E58-6048-4F03-8D83-F98A6874E22F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{169F45DF-46F1-435D-BFEB-71C9EFF29D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169F45DF-46F1-435D-BFEB-71C9EFF29D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169F45DF-46F1-435D-BFEB-71C9EFF29D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169F45DF-46F1-435D-BFEB-71C9EFF29D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B4E479-1932-4FDC-B417-F8230F7E380A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B4E479-1932-4FDC-B417-F8230F7E380A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B4E479-1932-4FDC-B417-F8230F7E380A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B4E479-1932-4FDC-B417-F8230F7E380A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA4D5E3-935F-4FBC-82D3-5FE001FB6F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA4D5E3-935F-4FBC-82D3-5FE001FB6F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA4D5E3-935F-4FBC-82D3-5FE001FB6F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA4D5E3-935F-4FBC-82D3-5FE001FB6F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B169E58-6048-4F03-8D83-F98A6874E22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B169E58-6048-4F03-8D83-F98A6874E22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B169E58-6048-4F03-8D83-F98A6874E22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B169E58-6048-4F03-8D83-F98A6874E22F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23B7ABFE-0943-48A9-8AEE-EA25630396D6}
+	EndGlobalSection
+EndGlobal

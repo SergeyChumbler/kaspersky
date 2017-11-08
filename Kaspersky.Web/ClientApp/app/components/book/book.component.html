@@ -1,0 +1,38 @@
+<h1>Books</h1>
+
+<p>Please use <a href="/swagger">swagger UI</a> to test the API</p>
+
+<div class="">
+    <table class='table' *ngIf="books">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Pages</th>
+            <th>PublishingHouse</th>
+            <th>PublishDate</th>
+            <th>Isbn</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{ book.id }}</td>
+            <td><img src="{{ book.imageUrl }}" style="width: 50px;" /></td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.pages }}</td>
+            <td>{{ book.publishingHouse }}</td>
+            <td>{{ book.publishDate }}</td>
+            <td>{{ book.isbn }}</td>
+            <td><button (click)="deleteBook(book.id)">delete</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>This is just to test file uploading</p>
+<div>
+    <input #fileInput type="file" />
+    <br/>
+    <button (click)="addFile()">Add file</button>
+</div>
