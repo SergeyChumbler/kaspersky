@@ -1,18 +1,6 @@
 ﻿import { Component, OnInit, Inject, ViewChild, ElementRef } from '@angular/core';
-import { Book, Author } from '../../_models/index';
+import { Book } from '../../_models/index';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
-
-class BookInfo implements Book {
-    constructor(
-        public id: number,
-        public title: string,
-        public pages: number,
-        public publishingHouse: string,
-        public authors: Author[],
-        public publishDate: Date,
-        public isbn: string,
-        public imageUrl: string ) { }
-}
 
 @Component({
     selector: 'book',
@@ -21,13 +9,15 @@ class BookInfo implements Book {
 
 export class BookComponent implements OnInit {
 
-    private _getBooksUrl = "api/book/getallbooks";
-    private _deleteBookUrl = "api/book/deletebook?id=";
+    private _getBooksUrl : string;
+    private _deleteBookUrl :string;
 
     public books: Book[];
     private baseUrl: string;
     constructor(private http: Http, @Inject('BASE_URL') baseUrl: string) {
         this.baseUrl = baseUrl;
+        this._getBooksUrl = this.baseUrl + "api/book/getallbooks";
+        this._deleteBookUrl = this.baseUrl + "api/book/deletebook?id=";
     }
 
     @ViewChild("fileInput") fileInput: ElementRef;
@@ -67,12 +57,9 @@ export class BookComponent implements OnInit {
     }
 
     deleteBook(id: string) {
-        console.log(id);
         var book = this.books.findIndex(b => b.id === +id);
         if (book !== undefined) {
-            console.log(id);
             (b => {
-                console.log(id);
                 var headers = new Headers();
                 headers.append('Content-Type', 'application/json');
                 this.http.delete(this._deleteBookUrl + id)
