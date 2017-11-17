@@ -4,18 +4,18 @@ using NUnit.Framework;
 
 namespace Kaspersky.Tests
 {
-	[TestFixture]
+    [TestFixture]
     public class TestBase
     {
-	    protected IIsbnService Service;
-	    protected IIsbnValidator Isbn13Validator;
-	    protected IIsbnValidator Isbn10Validator;
-	    [SetUp]
-	    public void Init()
-	    {
-		    Isbn13Validator = new Isbn13Validator();
-		    Isbn10Validator = new Isbn10Validator();
-		    Service = new IsbnService(new[] { Isbn13Validator, Isbn10Validator });
-	    }
-	}
+        protected IIsbnService Service;
+        protected IIsbnValidator Isbn13Validator;
+        protected IIsbnValidator Isbn10Validator;
+        [SetUp]
+        public void Init()
+        {
+            Isbn13Validator = new Isbn13Validator();
+            Isbn10Validator = new Isbn10Validator();
+            Service = new IsbnService(new[] { Isbn13Validator, Isbn10Validator });
+        }
+    }
 }

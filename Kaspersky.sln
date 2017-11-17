@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaspersky.Web", "Kaspersky.Web\Kaspersky.Web.csproj", "{169F45DF-46F1-435D-BFEB-71C9EFF29D68}"
 EndProject
@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaspersky.BL", "Kaspersky.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaspersky.Data", "Kaspersky.Data\Kaspersky.Data.csproj", "{7FA4D5E3-935F-4FBC-82D3-5FE001FB6F57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaspersky.Tests", "Kaspersky.Tests\Kaspersky.Tests.csproj", "{5B169E58-6048-4F03-8D83-F98A6874E22F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaspersky.Tests", "Kaspersky.Tests\Kaspersky.Tests.csproj", "{5B169E58-6048-4F03-8D83-F98A6874E22F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61068152-89B6-4A7B-AE86-1F7A4692CCB8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

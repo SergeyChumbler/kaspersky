@@ -43,13 +43,14 @@ namespace Kaspersky.Web.Controllers
         public async Task<IActionResult> DeleteBookAsync(int id)
         {
             var book = await GetBookById(id);
-            if (book == null) return NotFound();
+            if (book == null)
+                return NotFound();
 
             await _bookRepository.DeleteAsync(book);
             return Ok();
         }
 
-		[HttpPost("updatebook")]
+        [HttpPost("updatebook")]
         public async Task<IActionResult> UpdateBookAsync([FromBody]BookModel bookModel)
         {
             if (!ModelState.IsValid)
@@ -58,7 +59,7 @@ namespace Kaspersky.Web.Controllers
             if (bookModel.Id == 0)
             {
                 var newBook = await _bookRepository.CreateAsync(_mapper.Map<BookModel, Book>(bookModel));
-                return CreatedAtAction(nameof(GetAsync), new {id = newBook.Id}, newBook);
+                return CreatedAtAction(nameof(GetAsync), new { id = newBook.Id }, newBook);
             }
 
             var book = await GetBookById(bookModel.Id);
@@ -78,7 +79,8 @@ namespace Kaspersky.Web.Controllers
         {
             var filePath = Path.Combine(env.WebRootPath, "img", file.FileName);
 
-			if (file.Length <= 0) return Ok(new { file.Length, filePath });
+            if (file.Length <= 0)
+                return Ok(new { file.Length, filePath });
 
             using (var stream = new FileStream(filePath, FileMode.Create))
                 await file.CopyToAsync(stream);

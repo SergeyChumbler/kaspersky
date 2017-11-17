@@ -2,7 +2,7 @@
 {
     public interface IIsbnValidator
     {
-	    bool CanValidate(string isbn);
-	    bool IsValid(string isbn);
+        bool CanValidate(string isbn);
+        bool IsValid(string isbn);
     }
 }

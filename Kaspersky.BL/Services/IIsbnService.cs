@@ -2,6 +2,6 @@
 {
     public interface IIsbnService
     {
-	    bool Validate(string isbn);
+        bool Validate(string isbn);
     }
 }

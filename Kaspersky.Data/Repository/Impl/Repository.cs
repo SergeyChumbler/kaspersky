@@ -16,7 +16,7 @@ namespace Kaspersky.Data.Repository.Impl
 
         public Repository(KasperskyContext dbContext)
             => DbContext = dbContext;
-        
+
         public async Task<TEntity> GetSingleAsync(
             ISpecification<TEntity> specification,
             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,

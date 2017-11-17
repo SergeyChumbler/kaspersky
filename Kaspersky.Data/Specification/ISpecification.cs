@@ -4,8 +4,8 @@ using Kaspersky.Data.Domain;
 
 namespace Kaspersky.Data.Specification
 {
-	public interface ISpecification<T> where T : class, IEntity
-	{
-		Expression<Func<T, bool>> IsSatisifiedBy();
-	}
+    public interface ISpecification<T> where T : class, IEntity
+    {
+        Expression<Func<T, bool>> IsSatisifiedBy();
+    }
 }
